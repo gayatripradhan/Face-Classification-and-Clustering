@@ -42,15 +42,15 @@ out_encoder.fit(trainy)
 trainy = out_encoder.transform(trainy)
 testy = out_encoder.transform(testy)
 
-# fit svm model to Classify a face as one of a known set of people.
-svm = SVC(kernel='linear', probability=True)
-svm.fit(trainX, trainy)
+## fit svm model to Classify a face as one of a known set of people.
+#svm = SVC(kernel='linear', probability=True)
+#svm.fit(trainX, trainy)
 #predict
-example_prediction_svm = svm.predict(testX)
-example_identity_svm = out_encoder.inverse_transform(example_prediction_svm)
+#example_prediction_svm = svm.predict(testX)
+#example_identity_svm = out_encoder.inverse_transform(example_prediction_svm)
 #Score/accuracy
-acc_svm = accuracy_score(testy, svm.predict(testX))
-print(acc_svm)
+#acc_svm = accuracy_score(testy, svm.predict(testX))
+#print(acc_svm)
     
 #fit knn model to Classify a face as one of a known set of people.
 knn = KNeighborsClassifier(n_neighbors=1, metric='euclidean')
