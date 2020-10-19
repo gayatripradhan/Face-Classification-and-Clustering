@@ -33,7 +33,7 @@ print("[INFO] loading encodings...")
 directory = args["encodings"]
 data = load_embeddings_img(directory)
 data = np.array(data)
-encodings = [d["encoding"] for d in data]
+encodings = [d["embedding"] for d in data]
 
 # cluster the embeddings
 print("[INFO] clustering...")
