@@ -47,7 +47,7 @@ Sample result:
 
 ![UNKNOWN](https://github.com/gayatripradhan/Face-Classification-and-Clustering/blob/main/results/Unknown.PNG)
 
-# cluster_faces.py
+# Clustering.py
 We have embedding vectors of all faces in our dataset as 512-d vectors, the next step is to cluster them into groups.
 
 For this task we need a clustering algorithm, many clustering algorithms such as k-means and Hierarchical 
