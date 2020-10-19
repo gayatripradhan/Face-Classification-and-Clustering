@@ -1,3 +1,8 @@
+"""
+Created on Sun Oct 18 02:14:57 2020
+
+@author: jitup
+"""
 # USAGE
 # python Clustering.py --encodings Data\train
 
